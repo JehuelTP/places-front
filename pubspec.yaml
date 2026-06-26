@@ -1,0 +1,45 @@
+name: places
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.0  # Asegúrate de usar la última versión
+  http: ^1.2.0
+  shared_preferences: ^2.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato-Regular.ttf
+
+
+  assets:
+    - assets/images/perfil1.png
+    - assets/images/perfil2.png
+    - assets/images/usuario1.jpg
+    - assets/images/usuario2.jpg
+    - assets/images/usuario3.png
+    - assets/images/usuario4.jpg
+    - assets/images/usuario5.jpg
+    - assets/images/persona1.jpg
+    - assets/images/persona2.jpg
+    - assets/images/lugar1.jpg
+    - assets/images/lugar2.jpg
+    - assets/images/lugar3.jpg
+    - assets/images/lugar4.jpg
+    - assets/images/lugar5.jpg
+    - assets/images/lugar6.jpg
