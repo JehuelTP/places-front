@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
     try {
 
       final response = await http.post(
-        Uri.parse("http://dale1.click:8000/api/users/login"),
+        Uri.parse("http://dale1.click/api/users/login"),
         headers: {
           "Content-Type": "application/json",
         },
