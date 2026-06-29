@@ -21,16 +21,21 @@ class MyApp extends StatelessWidget {
       },
       child: MaterialApp(
         title: "Places",
-        debugShowCheckedModeBanner: false,  // ← Esto elimina la franja amarilla y negra
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         themeMode: ThemeMode.light,
-        initialRoute: '/',
-        routes: {
-          '/': (context) => const HomePage(),
-        },
+        home: Consumer<AuthProvider>(
+          builder: (context, auth, _) {
+            if (auth.isLoggedIn) {
+              return const HomePage();
+            } else {
+              return const LoginPage();
+            }
+          },
+        ),
       ),
     );
   }

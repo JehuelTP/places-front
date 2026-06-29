@@ -68,7 +68,6 @@ class _LoginPageState extends State<LoginPage> {
 
         auth.login(username, token);
 
-        Navigator.pop(context);
 
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
